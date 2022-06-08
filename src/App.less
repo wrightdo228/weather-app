@@ -1,0 +1,45 @@
+@light-blue: rgb(239, 246, 250);
+@blue: rgb(114, 175, 227);
+@dark-grey: rgb(51, 51, 51);
+
+.main-container {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 74px;
+  background-color: @light-blue;
+}
+
+.city-button {
+  border: none;
+  font-size: 38px;
+  background-color: transparent;
+  color: @dark-grey;
+  cursor: pointer;
+}
+
+.city-button-selected {
+  cursor: default;
+  font-weight: 700;
+  color: @blue;
+}
+
+#weather-display {
+  border: 8px solid #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#main-content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#city-selector {
+  display: flex;
+  justify-content: space-between;
+  max-width: 920px;
+  margin: 0 auto;
+  margin-bottom: 74px;
+}
