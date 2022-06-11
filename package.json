@@ -56,8 +56,10 @@
     "webpack-manifest-plugin": "^4.0.2",
     "workbox-webpack-plugin": "^6.4.1"
   },
-  "homepage": ".",
+  "homepage": "https://wrightdo228.github.io/weather-app",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "set NODE_ENV=development && node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
@@ -159,6 +161,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^4.0.0",
     "less": "^4.1.2",
     "less-loader": "^11.0.0",
     "prettier": "^2.5.1",
